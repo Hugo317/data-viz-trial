@@ -7,10 +7,14 @@ authors = [
     { name = "Hugo Caravlho", email = "hugomnc317@gmail.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "graphviz>=0.21",
+]
 
 [project.scripts]
 data-viz-trial = "data_viz_trial:main"
+csv-to-sqlite = "data_viz_trial.csv_to_sqlite:main"
+db-diagram = "data_viz_trial.db_diagram:main"
 
 [build-system]
 requires = ["uv_build>=0.12.10,<0.13.0"]
